@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>VOICE ASSISTANT</title>
+</head>
+<body>
+     <ul class="nav nav-tabs" id="nav"> 
+<ul class="nav nav-tabs">
+    <!-- Siri Button -->
+    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSiri" aria-controls="offcanvasSiri">Siri</button>
+
+  
+    <!-- Google Button -->
+    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasGoogle" aria-controls="offcanvasGoogle">Google</button>
+  </ul>
+  
+  <!-- Siri Off-Canvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasSiri" aria-labelledby="offcanvasSiriLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasSiriLabel">About Siri</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        
+            <button type="button" class="btn btn-outline-secondary"><a class="nav-link btn" aria-current="page" href="https://www.apple.com/in/siri/">Siri</a></button>
+        <br>
+      <p><b>Siri: Apple’s Voice Assistant</b></p>
+      <p>
+
+        Siri is Apple’s intelligent voice assistant, designed to provide a hands-free, interactive experience for users across Apple devices such as iPhones, iPads, Macs, Apple Watches, and HomePods. Launched in 2011 with the iPhone 4S, Siri uses advanced speech recognition and natural language processing to understand and respond to user commands and queries.
+        <br><br>
+        <b>Key Features of Siri:</b><br>
+        1. Personalized Assistance: Siri helps with setting alarms, reminders, and calendar events, as well as sending messages and making calls. <br>
+        2. Information Retrieval: It fetches real-time information, such as weather updates, news, and sports scores. <br>
+        3. Device Control: Siri can control device settings, launch apps, and adjust features like brightness or volume. <br>
+        4. Smart Home Integration: With Apple’s HomeKit, Siri manages smart home devices, such as lights, thermostats, and security cameras. <br>
+        5. Entertainment: It plays music, podcasts, and audiobooks, and can recommend content based on user preferences. <br>
+        6. Privacy-Focused: Apple emphasizes Siri's privacy, processing as much data as possible on-device to minimize data sharing with servers.
+        <br>
+        Siri continuously evolves with each iOS update, adding new capabilities and improving user interaction through machine learning and AI. Its integration across Apple’s ecosystem makes it a versatile and essential tool for enhancing productivity and convenience.</p> <!-- Add the full Siri content here -->
+    </div>
+  </div>
+  
+  <!-- Google Off-Canvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasGoogle" aria-labelledby="offcanvasGoogleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasGoogleLabel">About Google Assistant</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <button type="button" class="btn btn-outline-secondary"><a class="nav-link btn" aria-current="page" href="https://assistant.google.com/">Google</a></button>
+      <p><b>Google Voice Assistant</b></p>
+      <p>
+        Google Assistant is an advanced virtual assistant developed by Google, designed to provide a conversational and interactive experience across a wide range of devices, including Android phones, smart speakers, smart displays, and wearables. Launched in 2016, it uses cutting-edge AI, natural language processing (NLP), and machine learning to understand and respond to user commands and queries. <br><br>
+        
+        <b>Key Features of Google Assistant:</b><br>
+        Information and Productivity: Google Assistant retrieves real-time information like weather, news, and traffic updates, manages tasks such as setting reminders, alarms, and calendar events, and provides answers to general knowledge queries. <br>
+        1. Device Control: It controls device settings, such as adjusting brightness or activating Do Not Disturb mode, and supports app launching and hands-free texting or calling. <br>
+        2. Smart Home Integration: Seamlessly integrates with Google Home and third-party smart devices to control lights, thermostats, security cameras, and more. <br>
+        3. Entertainment: Plays music, podcasts, audiobooks, and videos on supported platforms like YouTube and Spotify. It also provides recommendations based on user preferences. <br>
+        4. Multilingual Support: Offers support for multiple languages, enabling it to cater to a global audience. <br>
+        5. Contextual Understanding: Recognizes context and follow-up questions, allowing for more natural and meaningful conversations. <br>
+        6. Third-Party Integrations: Works with third-party apps and services to enhance functionality, such as booking rides, ordering food, or performing online shopping. <br>
+        Google Assistant continuously improves with AI updates, offering smarter responses and personalized experiences, making it a powerful tool for productivity, entertainment, and smart living.</p> <!-- Add the full Google content here -->
+    </div>
+  </div>
+  
+  <ul class="nav nav-tabs">
+    <!-- Alexa Button -->
+    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAlexa" aria-controls="offcanvasAlexa">Alexa</button>
+  
+    <!-- Bixby Button -->
+    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBixby" aria-controls="offcanvasBixby">Bixby</button>
+  
+    <!-- Braina Button -->
+    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBraina" aria-controls="offcanvasBraina">Braina</button>
+  
+    <!-- Murf Button -->
+    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMurf" aria-controls="offcanvasMurf">Murf</button>
+  
+    <!-- Jarvis Button -->
+    <button type="button" class="btn btn-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasjarvis" aria-controls="offcanvasjarvis"><a class="nav-link"  href="jarvis.html">Jarvis</a></button>
+  </ul>
+  
+  <!-- Alexa Off-Canvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasAlexa" aria-labelledby="offcanvasAlexaLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasAlexaLabel">About Alexa</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <button type="button" class="btn btn-outline-secondary"><a class="nav-link btn" aria-current="page" href="https://www.amazon.com/b?node=21576558011">Alexa</a></button>
+      <p><b>Alexa: Amazon's Voice Assistant</b></p>
+      <p>Alexa is Amazon's intelligent voice assistant designed to provide hands-free interaction across a variety of devices, including Amazon Echo speakers, Fire TV, and third-party smart home products. Launched in 2014, Alexa uses artificial intelligence (AI), natural language processing (NLP), and machine learning to understand and respond to user commands. <br><br>
+        
+        <b>Key Features of Alexa:</b> <br>
+        1. Voice Commands: Alexa can answer questions, provide weather updates, play music, set alarms, manage to-do lists, and much more. <br>
+        2. Smart Home Control: Alexa integrates with smart home devices, allowing users to control lights, thermostats, security systems, and appliances. <br>
+        3. Skills and Third-Party Integrations: Alexa supports "Skills" that extend its functionality, such as ordering food, booking rides, and managing finances. <br>
+        4. Multilingual Support: Alexa offers support for multiple languages, enabling users from various regions to interact naturally. <br>
+        5. Entertainment: Alexa streams music from platforms like Amazon Music, Spotify, and Apple Music, and can also play audiobooks and podcasts. <br>
+        6. Routine Automation: Users can create personalized routines to automate tasks like turning on lights, adjusting the thermostat, or playing music based on time of day or voice command. <br>
+        With continuous updates and improvements, Alexa has become a central part of the smart home ecosystem, making everyday tasks easier through voice interaction.</p> <!-- Add the full Alexa content here -->
+    </div>
+  </div>
+  
+  <!-- Bixby Off-Canvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasBixby" aria-labelledby="offcanvasBixbyLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasBixbyLabel">About Bixby</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <button type="button" class="btn btn-outline-secondary"><a class="nav-link btn" aria-current="page" href="https://www.samsung.com/us/apps/bixby/">Bixby</a></button>
+      <p><b>Bixby: Samsung's Voice Assistant</b></p>
+      <p>
+        Bixby is Samsung's intelligent voice assistant designed to offer a personalized and interactive experience on Samsung devices such as smartphones, smartwatches, smart TVs, and home appliances. Launched in 2017 with the Samsung Galaxy S8, Bixby uses artificial intelligence (AI), machine learning, and natural language processing (NLP) to understand and respond to user commands and queries. <br><br>
+        
+        <b>Key Features of Bixby:</b><br>
+    
+        1. Voice Commands: Bixby can perform tasks such as making calls, sending texts, setting reminders, providing weather updates, and answering general knowledge questions. <br>
+        2. Device Control: It allows users to control device settings, launch apps, and adjust features like brightness, volume, or Wi-Fi. <br>
+        3. Smart Home Integration: Bixby integrates with Samsung's SmartThings platform, enabling users to control compatible smart home devices, including lights, thermostats, and security cameras. <br>
+        4. Contextual Understanding: Bixby can understand complex commands and follow-up questions, providing more natural and accurate responses. <br>
+        5. Bixby Vision: A feature that uses the device’s camera to provide real-time information about objects, such as translating text, identifying landmarks, or scanning QR codes. <br>
+        6. Multilingual Support: Bixby supports multiple languages, allowing it to cater to a global audience. <br>
+        Bixby is continuously evolving, with regular updates adding new features and improving the user experience. It is designed to work seamlessly with Samsung’s ecosystem of devices, making it a powerful tool for enhancing productivity, smart living, and entertainment.</p> <!-- Add the full Bixby content here -->
+    </div>
+  </div>
+  
+  <!-- Braina Off-Canvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasBraina" aria-labelledby="offcanvasBrainaLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasBrainaLabel">About Braina</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <button type="button" class="btn btn-outline-secondary"><a class="nav-link btn" aria-current="page" href="https://www.brainasoft.com/braina/">Braina</a></button>
+      <p><b>Braina: AI Voice Assistant by Brainasoft</b></p>
+      <p>
+        Braina is an advanced AI-powered voice assistant developed by Brainasoft, designed to perform a variety of tasks on Windows-based systems. It combines speech recognition, natural language processing (NLP), and artificial intelligence (AI) to provide hands-free interaction and automation for users. Launched in 2014, Braina aims to enhance productivity by enabling users to control their computers using voice commands. <br>
+        <br>
+        <b>Key Features of Braina:</b><br>
+        
+        1. Speech Recognition: Braina can accurately transcribe voice commands and convert them into text, making it ideal for dictation tasks. <br>
+        2. Task Automation: It helps automate repetitive tasks such as opening applications, managing files, and controlling system settings like volume or screen brightness. <br>
+        3. Smart Assistant: Braina can answer general knowledge questions, fetch real-time information like weather or news, and provide reminders, calendar events, and more. <br>
+        4. Multimedia Control: It can control music and video playback, adjust system settings, and perform web searches on browsers, all via voice commands. <br>
+        5. Language Translation: Braina offers translation services, enabling users to translate text or phrases between various languages. <br>
+        6. Hands-Free Control: Beyond voice commands, Braina also includes support for keyboard shortcuts, allowing users to quickly access different functionalities. <br>
+        7. Custom Commands: Users can create custom voice commands for specific tasks, allowing for a personalized experience. <br><br>
+        Braina is available in both a free and premium version, with the premium offering enhanced features like voice-controlled web search, language translation, and advanced automation. It is an ideal assistant for users looking to streamline their workflows, increase efficiency, and use their computer hands-free.</p> <!-- Add the full Braina content here -->
+    </div>
+  </div>
+  
+  <!-- Murf Off-Canvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMurf" aria-labelledby="offcanvasMurfLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasMurfLabel">About Murf</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <button type="button" class="btn btn-outline-secondary"><a class="nav-link btn" aria-current="page" href="https://murf.ai/">Murf</a></button>
+      <p><b>Murf: Voice Assistant for Professional Audio</b></p>
+      <p>
+        Murf is an AI-driven voice assistant that focuses on transforming text into high-quality speech for professional applications. It is primarily designed for content creators, podcasters, marketers, and businesses looking for a versatile and realistic text-to-speech solution. By utilizing advanced speech synthesis technologies, Murf aims to offer lifelike voiceovers that sound natural and human-like. <br><br>
+        
+        <b>Key Features of Murf:</b>
+        <br>
+        1. Realistic Text-to-Speech: Murf uses deep learning and AI to generate natural-sounding voiceovers from text input. It offers a wide range of voices in multiple languages with different accents and tones. <br>
+        2. Voice Customization: Users can adjust the voice's speed, pitch, and tone, and even select different voices based on gender or age for more personalization. <br>
+        3. Multi-Platform Integration: Murf can be integrated with various platforms and applications, making it suitable for content creation, voiceovers for videos, presentations, eLearning modules, and more. <br>
+        4. Voice Cloning: Murf allows users to clone their own voice, which can be used for generating personalized voice content for videos and podcasts. <br>
+        5. AI-Generated Voiceovers: It provides high-quality AI-generated voiceovers that are perfect for professional projects, replacing the need for hiring voice artists. <br>
+        6. Text-to-Video: Murf can create video content by syncing its voice with video clips, making it an excellent tool for creating tutorials or promotional material. <br>
+        Murf is widely used in industries like media, e-learning, corporate training, and marketing, offering a reliable and efficient way to generate voiceovers and audio content. It is known for its easy-to-use interface and the ability to produce high-quality audio content quickly.</p> <!-- Add the full Murf content here -->
+    </div>
+  </div>
+      </ul> 
+      
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://i.pinimg.com/originals/c6/b8/47/c6b847edb7f01cc59957b9a066dea617.gif" class="d-block w-100" alt="yo" height="640">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Real-Time Voice Assistant</h5>
+              <p>A real-time voice assistant is a software application or system designed to process and respond to user commands or queries spoken in natural language, instantly and interactively. These assistants utilize speech recognition, natural language processing (NLP), and text-to-speech (TTS) technologies to provide seamless, hands-free user interaction.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn.dribbble.com/users/2585799/screenshots/7884899/media/0eb0ae5060721e4e763ca41dae9b766a.gif" class="d-block w-100 h-90" alt="hi" height="640" >
+            <div class="carousel-caption d-none d-md-block">
+              <h5> Features </h5>
+              <p>A voice assistant retrieves information, performs web searches, controls devices, plays music, sets reminders, and manages schedules. It integrates with smart home devices for tasks like adjusting lights or thermostats. Using real-time speech recognition and natural language understanding, it ensures hands-free, efficient interaction for productivity, entertainment, and daily assistance.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://wallpapercave.com/wp/wp5848436.jpg" class="d-block w-100" alt="hi" height="640" width="640">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Capabilities</h5>
+              <p>A real-time voice assistant can retrieve information, perform web searches, and control devices like apps or music players. It sets reminders, manages schedules, and checks the time. With smart home integration, it operates IoT devices like lights or thermostats. It also offers entertainment, small talk, and immediate responses for user queries.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div><br>
+      <div class="about">
+        <div class="card" style="width: 50rem;" id="card1">
+            <img src="https://media.licdn.com/dms/image/v2/C5612AQGal-RHszlTsg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1521812998053?e=2147483647&v=beta&t=c_bvePyBC1lri2aDKoL-efENaIhwBkO0nUwZoL15xqg" class="card-img-top" alt="tony">
+            <div class="card-body">
+              <h5 class="card-title">Real-Time Voice Assistant Web Page</h5>
+              <p class="card-text"><i>Welcome to the Real-Time Voice Assistant Web Page, where we showcase some of the most popular voice assistants alongside a custom-built assistant, Jarvis. The page offers a comprehensive experience with voice-enabled interactions, allowing users to seamlessly perform various tasks, similar to what they would with voice assistants like Siri, Alexa, Google Assistant, Bixby, Briana, and Murf.</i></p>
+              <a href="jarvis.html" class="btn btn-secondary">Click To Experience</a>
+            </div>
+          </div>
+          <div class="card" style="width: 430px; height: 550px;" id="card2">
+            <div class="card-body">
+                <h5 class="card-title">About Jarvis</h5>
+                <p class="card-text"><i>One of the key features of this project is Jarvis, a personal voice assistant that I have developed from scratch. Inspired by the popular voice assistants like Siri and Alexa, Jarvis is designed to carry out a range of tasks with minimal input from the user. Jarvis can process voice commands and respond accordingly, making it a powerful tool for hands-free operation of various functions. <br>
+
+                    Jarvis is integrated into the web page using Python and web technologies, enabling it to interact with users in real-time. With the simple integration of Python's speech recognition and text-to-speech capabilities, Jarvis can carry out tasks like: <br>
+                    <li>Providing weather updates</li>
+                       <li>Setting alarms and reminders </li>  
+                       <li>Performing basic math operations </li> 
+                        <li>Searching Wikipedia </li>
+                        <li>Opening websites and navigating the web </li>
+                        <li>Answering questions about the time or date</li>
+                    </i></p>
+            </div>
+        </div>        
+      </div>
+      <div class="thank">
+        <p class="d-inline-flex gap-1">
+            <a class="btn btn-light" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">How He Works</a>
+            <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Technologies Used</button>
+            <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Click to see both</button>
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body">
+                    Jarvis is built using Python, integrating speech recognition for listening to user commands and text-to-speech for responding in a natural-sounding voice. The assistant's capabilities are driven by Python libraries such as pyttsx3 for speech synthesis, speech_recognition for processing audio commands, and various APIs for real-time tasks like weather updates and web searches.
+                    <br><br>
+                    1. Voice Commands: Jarvis listens for keywords and phrases, interpreting commands like "What's the weather in New York?", "Set an alarm for 7 AM", or "Open YouTube." <br> <br>
+                    2. Real-Time Responses: Once a command is detected, Jarvis processes it and delivers an appropriate response, either by speaking it aloud or performing the requested action. <br> <br>
+                    3. Customizability: One of the key features of Jarvis is its flexibility. You can add new commands and integrate it with other platforms to extend its functionality as you see fit.
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card card-body">
+                    This project demonstrates the integration of Python with web development technologies to create an interactive, voice-responsive web page. Here’s a breakdown of the key technologies used: <br><br>
+                    1. Python: The backend programming language used for processing the voice commands and generating the assistant's responses. <br> <br>
+                    2. Speech Recognition: Python's speech_recognition library is used to convert voice input into text that can be processed. <br> <br>
+                    3. Text-to-Speech: The pyttsx3 library allows Jarvis to speak responses aloud, providing a more immersive experience. <br> <br>
+                    4. Web Technologies: HTML, CSS, and JavaScript are used to build the front-end of the page, providing a user-friendly interface. <br> <br>
+                    5.APIs: External APIs, such as OpenWeatherMap for weather updates and Wikipedia for information retrieval, are integrated into the assistant's functionality.
+                </div>
+              </div>
+            </div>
+          </div>
+      </div><br>
+      <h1 class="p">THANK YOU 👍</h1>
+      <br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

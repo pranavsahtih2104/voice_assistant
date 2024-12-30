@@ -1,0 +1,48 @@
+body{
+     background-color: black; 
+    color:aliceblue; 
+}
+.siri{
+    margin-left: 225px;
+}
+.card{
+    background-color: lavenderblush;
+    color: black;
+    width:400px;
+    height: 350px;
+    margin-left: 100px;
+    text-align: justify;
+    border-width: 2px;
+    border-color: aliceblue;
+}
+.about{
+    display: flex;
+}
+h2{
+    margin-left: 40px;
+}
+.video{
+    margin-left: 350px;
+    color:black ;
+    background-color:lavenderblush;
+    width: 600px;
+    height: 350px;
+    padding: 40px 0px 0px 50px;
+}
+#response {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}

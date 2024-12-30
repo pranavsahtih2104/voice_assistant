@@ -1,0 +1,33 @@
+
+.nav-link {
+    color: black !important; 
+}
+
+#card1 {
+    margin-left: 10px;
+    margin-bottom: 30px;
+  color: black;
+  background-color:lightgray;
+}
+
+#card2 {
+
+    margin-left: 10px;
+   background-color: lavender;  
+}
+.about{
+    display:flex;
+}
+.thank{
+    margin-left: 5px;
+    width: 1250px;
+    height: 550px;
+    background-color:bisque;
+}
+.p{
+    text-align: center;
+}
+button{
+    border-radius: 0%;
+    margin: 5px;
+}

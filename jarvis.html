@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="jarvis.css">
+
+    <title>Jarvis</title>
+</head>
+<body>
+    <audio id="music" src="jarvis.mp3"></audio><br><br>
+    <h1 align="center">Hey My Name Is Jarvis...</h1> <br>
+    <h2 align="center">Welcome To My Web Page</h2><br><br>
+    <img class="siri" src="https://i.pinimg.com/originals/5b/fa/c0/5bfac05585616fd39812e7d9d6d107df.gif" alt="hi">
+    <button onclick="startSpeechRecognition()">Start Listening</button>
+    <div id="response"></div>
+
+    <div class="about">
+        <div class="card" style="width: 30rem; height: 30rem;">
+            <div class="card-body">
+              <p class="card-text"> <b>What Jarvis can do?</b><br>
+                Jarvis is a personal voice assistant that I have developed from scratch. Inspired by the popular voice assistants like Siri and Alexa, Jarvis is designed to carry out a range of tasks with minimal input from the user. Jarvis can process voice commands and respond accordingly, making it a powerful tool for hands-free operation of various functions. <br> <br>
+    
+                Jarvis is integrated into the web page using Python and web technologies, enabling it to interact with users in real-time. With the simple integration of Python's speech recognition and text-to-speech capabilities, Jarvis can carry out tasks like: <br><br>
+                
+                1. Providing weather updates <br>
+                2. Setting alarms and reminders <br>
+                3. Performing basic math operations <br>
+                4. Searching Wikipedia <br>
+                5.Opening websites and navigating the web <br>
+                6. Answering questions about the time or date</p>
+            </div>
+          </div><br>
+          <div class="card" style="width: 30rem; height: 30rem;">
+            <div class="card-body">
+              <p class="card-text"><b>Future Enhancements</b> <br>
+                The current version of Jarvis is a simple yet powerful assistant capable of handling basic tasks. However, there are plans for future enhancements, including: <br><br>
+                
+                1. More advanced natural language processing (NLP) to understand a wider range of commands. <br>
+                2. Integration with smart home devices for controlling lights, thermostats, and other IoT devices. <br>
+                3. Personalized responses to offer a more customized experience based on user preferences. <br>
+                4. Mobile app integration for accessing Jarvis on smartphones and other devices. <br>
+                5. Multilingual support to make Jarvis accessible to a global audience. 
+                </p>
+            </div>
+          </div>
+    </div><br>
+    <h2>How To Build a Voice Assistant Like Jarvis:</h2><br>
+    <div class="card" style="width: 70rem; height: 30rem;" >
+        <div class="card-body">
+          <p class="card-text">Here’s a step-by-step procedure to create a real-time voice assistant: <br>
+
+            1. Define the Purpose and Scope:
+               - Decide on the tasks the voice assistant should handle (e.g., answering questions, controlling devices, setting reminders). <br>
+            
+            2. Set Up the Development Environment:
+               - Install necessary tools like Python (for backend), HTML/CSS/JavaScript (for front-end), and any other frameworks or libraries. <br>
+            
+            3. Integrate Speech Recognition:
+               - Choose a speech recognition library (e.g., Google Speech API or speech_recognition library in Python) to convert spoken words into text. <br>
+            
+            4. Text-to-Speech (TTS) Integration:
+               - Implement a TTS engine (like pyttsx3 or Google TTS) to convert text responses back into speech. <br>
+            
+            5. Natural Language Processing (NLP):
+               - Integrate an NLP library (like spaCy, or Rasa) to understand and process the user’s commands. <br>
+            
+            6. Command Processing:
+               - Build a logic to map user input to predefined commands or actions (e.g., opening apps, controlling devices, retrieving information). <br>
+            
+            7. Integration with External APIs:
+               - Incorporate APIs for tasks such as fetching weather information, setting reminders, or controlling smart home devices. <br>
+            
+            8. Voice Assistant’s Interface:
+               - Design a web interface for users to interact with the voice assistant, such as a microphone button to activate it and a text display for feedback. <br>
+            
+            9. Real-Time Operation:
+               - Ensure the voice assistant operates in real-time by setting up continuous listening and processing of commands. <br>
+            
+            10. Testing and Optimization:
+                - Test the voice assistant for accuracy, speed, and reliability. Optimize for minimal delays and smooth operation. <br>
+            
+            11. Deploy the Application:
+                - Deploy the web application on a server or locally for personal use. <br>
+            
+            12. Iterate and Improve:
+                - Continuously improve the assistant’s abilities, adding new features or improving existing ones based on user feedback.</p>
+        </div>
+      </div><br><br>
+      <div class="video">
+        <h3>video tutorial</h3>
+        <video controls src="video.mp4" width="500"></video>
+      </div> <br><br>
+    <script>
+        window.onload = function() {
+            const audio = document.getElementById("music");
+            audio.play();
+            audio.onended = function() {
+                console.log("Audio has finished playing.");
+            };
+        };
+    
+        function startSpeechRecognition() {
+            // Check if the browser supports the SpeechRecognition API
+            if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+                const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+                recognition.lang = 'en-US';
+                recognition.start();
+
+                recognition.onresult = function(event) {
+                    const command = event.results[0][0].transcript;
+                    console.log("You said: " + command);
+                    sendCommandToServer(command);
+                };
+
+                recognition.onerror = function(event) {
+                    console.error("Error occurred in speech recognition: " + event.error);
+                };
+            } else {
+                alert("Speech Recognition not supported in this browser.");
+            }
+        }
+
+        function sendCommandToServer(command) {
+            $.ajax({
+                url: 'http://127.0.0.1:5000/command',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({ command: command }),
+                success: function(response) {
+                    console.log(response);
+                    document.getElementById("response").innerText = response.response;
+
+                    // Speak the response using the SpeechSynthesis API
+                    const speech = new SpeechSynthesisUtterance(response.response);
+                    window.speechSynthesis.speak(speech);
+                },
+                error: function(xhr, status, error) {
+                    console.error("Error: " + error);
+                }
+            });
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script> <!-- Add this line to ensure annyang is loaded -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
